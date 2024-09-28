@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bill Splitting App</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="divide.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Bill Splitting App</h1>
+    <a class="access-button" href="split.html">
+      <button class="btn-animated">Split</button>
+    </a>
+    <a class="access-button" href="bill.html">
+      <button  class="btn-animated">Bill</button>
+    </a>
+    <!-- Form for adding expenses -->
+    <form id="expense-form">
+      <label for="expense-name">Expense Name:</label>
+      <input type="text" id="expense-name" required>
+
+      <label for="expense-amount">Total Amount:</label>
+      <input type="number" id="expense-amount" step="0.01" required>
+
+      <label for="participants">Participants (comma-separated names):</label>
+      <input type="text" id="participants" placeholder="e.g. Alice, Bob, Charlie" required>
+
+      <label for="payments">Payments (comma-separated amounts):</label>
+      <input type="text" id="payments" placeholder="e.g. 20, 30, 0" required>
+
+      <button type="submit" class="btn-animated">Add Expense</button>
+    </form>
+
+    <!-- Expense summary and balances -->
+    <div id="expense-summary">
+      <h2>Current Balances</h2>
+      <ul id="balances-list"></ul>
+    </div>
+  </div>
+
+  <script src="divide.js"></script>
+</body>
+</html>

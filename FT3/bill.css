@@ -1,0 +1,129 @@
+/* Universal styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #ffcc70, #ff6f91);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full height for centering */
+}
+
+.container {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 600px;
+  animation: slideIn 1s ease-out;
+}
+
+/* Slide-in animation */
+@keyframes slideIn {
+  from {
+      opacity: 0;
+      transform: translateY(20px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+/* Headings */
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+  font-size: 2.2em;
+}
+
+h2 {
+  font-size: 1.8em;
+  margin-bottom: 10px;
+  color: #ff6f91;
+}
+
+/* Input styles */
+.input-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+input {
+  margin-bottom: 10px;
+  padding: 12px 15px;
+  font-size: 16px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  transition: all 0.3s;
+  outline: none;
+}
+
+input:focus {
+  border-color: #ff6f91;
+  box-shadow: 0 0 8px rgba(255, 111, 145, 0.3);
+}
+
+/* Button styles */
+button {
+  padding: 12px;
+  font-size: 16px;
+  background-color: #ff6f91;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+  background-color: #ffcc70;
+}
+
+/* Remove button style */
+.remove {
+  background-color: #d9534f; /* Danger color for remove button */
+}
+
+.remove:hover {
+  background-color: #c9302c; /* Darker shade on hover */
+}
+
+/* Results section */
+#results {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+/* Access button styles */
+.access-button {
+  color: white;
+  text-decoration: none;
+}
+
+.access-button:hover {
+  text-decoration: underline;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+  body {
+      padding: 10px;
+  }
+
+  .container {
+      width: 100%;
+      padding: 20px;
+  }
+}

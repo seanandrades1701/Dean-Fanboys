@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bill Splitting App</title>
+  <link rel="stylesheet" href="split.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Bill Splitting App</h1>
+    <a class="access-button" href="divide.html">
+      <button class="btn-animated">Divide</button>
+    </a>
+    <a class="access-button" href="bill.html">
+      <button  class="btn-animated">Bill</button>
+    </a>
+
+    <!-- Form for adding expenses -->
+    <form id="expense-form">
+      <label for="expense-name">Expense Name:</label>
+      <input type="text" id="expense-name" required>
+
+      <label for="expense-amount">Amount:</label>
+      <input type="number" id="expense-amount" step="0.01" required>
+
+      <label for="participants">Participants (comma-separated names):</label>
+      <input type="text" id="participants" placeholder="e.g. Alice, Bob, Charlie" required>
+
+      <label for="split-method">Split Method:</label>
+      <select id="split-method">
+        <option value="even">Evenly</option>
+        <option value="percentage">By Percentage</option>
+      </select>
+
+      <button type="submit" class="btn-animated">Add Expense</button>
+    </form>
+
+    <!-- Expense summary and balances -->
+    <div id="expense-summary">
+      <h2>Current Balances</h2>
+      <ul id="balances-list"></ul>
+    </div>
+  </div>
+
+  <script src="split.js"></script>
+</body>
+</html>
