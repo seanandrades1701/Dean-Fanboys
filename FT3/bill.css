@@ -1,0 +1,91 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #ffcc70, #ff6f91);
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 600px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    color: #333;
+}
+
+input[type="text"], input[type="number"] {
+    width: calc(50% - 10px);
+    padding: 10px;
+    margin-right: 10px;
+}
+
+button {
+    padding: 10px;
+    background: #ff6f91;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #ffcc70;
+}
+
+#bill-list, #contribution-list {
+    list-style: none;
+    padding: 0;
+}
+
+.hidden {
+    display: none;
+}
+
+.access-button
+  {
+    color: white;
+  }
+
+  button {
+    padding: 12px;
+    font-size: 18px;
+    background-color: #ff6f91;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  button:hover {
+    background-color: #ffcc70;
+  }
+  
+  .btn-animated {
+    animation: btnPulse 1.5s infinite;
+  }
+
+  @keyframes btnPulse {
+    0% {
+      transform: scale(1);
+      box-shadow: 0 0 0 0 rgba(255, 111, 145, 0.4);
+    }
+    50% {
+      transform: scale(1.05);
+      box-shadow: 0 0 20px 10px rgba(255, 111, 145, 0);
+    }
+    100% {
+      transform: scale(1);
+      box-shadow: 0 0 0 0 rgba(255, 111, 145, 0);
+    }
+  }
+  
+  .access-button
+  {
+    text-decoration: none;
+  }
