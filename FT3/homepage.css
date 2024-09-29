@@ -1,0 +1,70 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+    background-image: url(moneyrain.gif);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f4f8;
+  }
+  
+  .homepage-container {
+    text-align: center;
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    color: #1f2053;
+    margin-bottom: 10px;
+  }
+  
+  p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 20px;
+  }
+  
+  button {
+    padding: 12px 24px;
+    font-size: 1.2rem;
+    background-color: #1f2053;
+    color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  button:hover {
+    background-color: #426fbc;
+  }
+  
+  .btn-animated {
+    animation: btnPulse 1.5s infinite;
+  }
+  
+  @keyframes btnPulse {
+    0% {
+      transform: scale(1);
+      box-shadow: 0 0 0 0 rgba(98, 92, 226, 0.4);
+    }
+    50% {
+      transform: scale(1.05);
+      box-shadow: 0 0 20px 10px rgba(255, 111, 145, 0);
+    }
+    100% {
+      transform: scale(1);
+      box-shadow: 0 0 0 0 rgba(255, 111, 145, 0);
+    }
+  }
+  

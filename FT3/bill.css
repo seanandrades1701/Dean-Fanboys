@@ -1,6 +1,7 @@
 body {
     font-family: Arial, sans-serif;
-    background: linear-gradient(135deg, #ffcc70, #ff6f91);
+    background-image: url(WhatsApp\ Image\ 2024-09-29\ at\ 11.19.40_a59f3c1a.jpg);
+    /*background: linear-gradient(135deg, #ffcc70, #ff6f91);*/
     margin: 0;
     padding: 20px;
 }
@@ -15,7 +16,11 @@ body {
 }
 
 h1, h2 {
-    color: #333;
+    color: #1f2053;
+}
+.img
+{
+  width: 100%;
 }
 
 input[type="text"], input[type="number"] {
@@ -26,7 +31,7 @@ input[type="text"], input[type="number"] {
 
 button {
     padding: 10px;
-    background: #ff6f91;
+    background: #1f2053;
     color: white;
     border: none;
     border-radius: 5px;
@@ -34,7 +39,7 @@ button {
 }
 
 button:hover {
-    background: #ffcc70;
+    background: #49b4c9;
 }
 
 #bill-list, #contribution-list {
@@ -54,7 +59,7 @@ button:hover {
   button {
     padding: 12px;
     font-size: 18px;
-    background-color: #ff6f91;
+    background-color: #1f2053;
     color: white;
     border: none;
     border-radius: 10px;
@@ -63,7 +68,7 @@ button:hover {
   }
   
   button:hover {
-    background-color: #ffcc70;
+    background-color: #4a89c1;
   }
   
   .btn-animated {
@@ -73,7 +78,7 @@ button:hover {
   @keyframes btnPulse {
     0% {
       transform: scale(1);
-      box-shadow: 0 0 0 0 rgba(255, 111, 145, 0.4);
+      box-shadow: 0 0 0 0 rgba(83, 157, 218, 0.4);
     }
     50% {
       transform: scale(1.05);

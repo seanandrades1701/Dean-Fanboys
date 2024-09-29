@@ -7,7 +7,8 @@
 
 body {
   font-family: 'Poppins', sans-serif;
-  background: linear-gradient(135deg, #001f06, #000000);
+  background-image: url(WhatsApp\ Image\ 2024-09-29\ at\ 11.19.40_a59f3c1a.jpg);
+  /*background: linear-gradient(135deg, #001f06, #000000);*/
   display: flex;
   justify-content: center;
   align-items: top;
@@ -15,6 +16,7 @@ body {
 }
 
 .container {
+  opacity: 100%;
   background: #ffffff;
   padding: 30px;
   border-radius: 20px;
@@ -52,9 +54,11 @@ form {
 }
 
 label {
+  background-color: white;
+  border-radius: 20px;
   margin-bottom: 5px;
   font-weight: 600;
-  color: #555;
+  color: hsl(248, 100%, 50%);
 }
 
 input, select {
@@ -68,8 +72,8 @@ input, select {
 }
 
 input:focus, select:focus {
-  border-color: #ff6f91;
-  box-shadow: 0 0 8px rgba(255, 111, 145, 0.3);
+  border-color: #5b7fe2;
+  box-shadow: 0 0 8px rgba(102, 66, 221, 0.3);
 }
 
 button {
@@ -94,7 +98,7 @@ button:hover {
 @keyframes btnPulse {
   0% {
     transform: scale(1);
-    box-shadow: 0 0 0 0 rgba(255, 111, 145, 0.4);
+    box-shadow: 0 0 0 0 rgba(98, 92, 226, 0.4);
   }
   50% {
     transform: scale(1.05);
@@ -113,13 +117,13 @@ button:hover {
 h2 {
   font-size: 1.8em;
   margin-bottom: 10px;
-  color: #000000;
+  color: #ffffff;
 }
 
 #balances-list {
   list-style-type: none;
   font-size: 1.2em;
-  color: #333;
+  color: #2b117b;
   padding: 0;
 }
 
