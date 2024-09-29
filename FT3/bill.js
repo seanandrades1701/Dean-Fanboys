@@ -45,9 +45,9 @@ function calculateSplit() {
         const difference = total - amountOwed;
 
         if (difference > 0) {
-            output.innerHTML += `<p>${name} should receive $${difference.toFixed(2)}</p>`;
+            output.innerHTML += `<p>${name} should receive ₹${difference.toFixed(2)}</p>`;
         } else if (difference < 0) {
-            output.innerHTML += `<p>${name} should pay $${Math.abs(difference).toFixed(2)}</p>`;
+            output.innerHTML += `<p>${name} should pay ₹${Math.abs(difference).toFixed(2)}</p>`;
         } else {
             output.innerHTML += `<p>${name} is even.</p>`;
         }

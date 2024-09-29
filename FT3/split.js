@@ -30,7 +30,7 @@ function updateBalances() {
   balancesList.innerHTML = '';
   for (let person in balances) {
     const listItem = document.createElement('li');
-    listItem.textContent = `${person}: $${balances[person].toFixed(2)}`;
+    listItem.textContent = `${person}: ₹${balances[person].toFixed(2)}`;
     balancesList.appendChild(listItem);
   }
 }

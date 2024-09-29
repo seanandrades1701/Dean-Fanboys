@@ -45,9 +45,9 @@ function updateBalances() {
 
     // Update the UI to show how much each person owes
     if (balance > 0) {
-      listItem.textContent = `${person} Should give: $${balance}`;
+      listItem.textContent = `${person} Should give: ₹${balance}`;
     } else if (balance < 0) {
-      listItem.textContent = `${person} Should Receive: $${Math.abs(balance)}`;
+      listItem.textContent = `${person} Should Receive: ₹${Math.abs(balance)}`;
     } else {
       listItem.textContent = `${person} is settled up.`;
     }

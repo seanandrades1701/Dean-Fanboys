@@ -7,7 +7,7 @@
 
 body {
   font-family: 'Poppins', sans-serif;
-  background: linear-gradient(135deg, #ffcc70, #ff6f91);
+  background: linear-gradient(135deg, #001f06, #000000);
   display: flex;
   justify-content: center;
   align-items: top;
@@ -36,11 +36,13 @@ body {
   }
 }
 
-h1 {
-  text-align: center;
-  margin-bottom: 20px;
-  color: #333;
-  font-size: 2.2em;
+/*h1 {
+width: 200px;
+} */
+
+.img
+{
+  width: 100%;
 }
 
 form {
@@ -73,8 +75,8 @@ input:focus, select:focus {
 button {
   padding: 12px;
   font-size: 18px;
-  background-color: #ff6f91;
-  color: white;
+  background-color: #1f2053;
+  color: rgb(255, 255, 255);
   border: none;
   border-radius: 10px;
   cursor: pointer;
@@ -82,7 +84,7 @@ button {
 }
 
 button:hover {
-  background-color: #ffcc70;
+  background-color: #426fbc;
 }
 
 .btn-animated {
@@ -111,7 +113,7 @@ button:hover {
 h2 {
   font-size: 1.8em;
   margin-bottom: 10px;
-  color: #ff6f91;
+  color: #000000;
 }
 
 #balances-list {
